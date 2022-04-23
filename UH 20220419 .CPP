@@ -33,7 +33,7 @@ int main () {
     
     if (a <= 100 || b <=100 || c <= 100) {
          hasil = a * 30/100  + b * 30/100  + c * 40/100 ;
-      cout << hasil << endl;
+      cout << "rata-rata : " << hasil << endl;
      }
 
 }
