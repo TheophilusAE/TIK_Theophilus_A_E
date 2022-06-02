@@ -5,7 +5,6 @@ using namespace std;
 int main () {
     
     float a,b,c,hasil;
-    string keterangan;
     
     cout << "masukan nilai Tugas : ";
     cin >> a;
@@ -33,7 +32,19 @@ int main () {
     
     if (a <= 100 || b <=100 || c <= 100) {
          hasil = a * 30/100  + b * 30/100  + c * 40/100 ;
-      cout << "rata-rata : " << hasil << endl;
+         
+         if (hasil >= 75) {
+             cout << "rata-rata : " << hasil << "(D)"<< endl;
+         }
+         else if (hasil >= 75 || hasil <= 82) {
+             cout << "rata-rata : " << hasil << "(C)"<< endl;
+         }
+         else if (hasil >= 82 || hasil <= 92) {
+             cout << "rata-rata : " << hasil << "(B)"<< endl;
+         }
+         else if (hasil >= 92 || hasil <= 100) {
+             cout << "rata-rata : " << hasil << "(A)"<< endl;
+         }
      }
 
 }
